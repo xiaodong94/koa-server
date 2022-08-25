@@ -1,0 +1,73 @@
+{
+  "name": "chee-server",
+  "version": "1.0.0",
+  "main": "build/app.js",
+  "engines": {
+    "node": ">=8.11.2"
+  },
+  "scripts": {
+    "start": "NODE_ENV=local nodemon build/app.js",
+    "development": "NODE_ENV=development nodemon build/app.js",
+    "production": "NODE_ENV=production NODE_DEV=localPro nodemon build/app.js",
+    "watch": "tsc -w",
+    "build": "rm -rf build/* && tsc",
+    "check": "eslint --ext .ts,.js,.jsx . --fix"
+  },
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "agentkeepalive": "^4.1.3",
+    "dotenv": "^16.0.1",
+    "koa": "^2.13.0",
+    "koa-body": "^4.2.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-compress": "^5.0.1",
+    "koa-helmet": "^5.2.0",
+    "koa-json": "^2.0.2",
+    "koa-router": "^9.4.0",
+    "koa-safe-jsonp": "^1.0.0",
+    "koa-static": "^5.0.0",
+    "koa-visit-logger": "^1.0.3",
+    "lodash": "^4.17.21",
+    "lucky-logger": "^0.0.3",
+    "moment": "^2.28.0",
+    "node-fetch": "^2.6.1",
+    "ssh2-connect-mysql": "^1.0.2",
+    "web3": "^1.7.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@types/koa": "^2.11.4",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-compress": "^4.0.0",
+    "@types/koa-helmet": "^5.2.0",
+    "@types/koa-json": "^2.0.18",
+    "@types/koa-router": "^7.4.1",
+    "@types/koa-static": "^4.0.1",
+    "@types/lodash": "^4.14.182",
+    "@types/node-fetch": "^2.5.7",
+    "@types/raven": "^2.5.3",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "@typescript-eslint/utils": "^5.28.0",
+    "eslint": "8.5.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^4.3.0",
+    "nodemon": "^2.0.4",
+    "prettier": "2.7.1",
+    "prettier-eslint": "^15.0.1",
+    "typescript": "^3.9.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chee-finance/chee-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chee-finance/chee-server/issues"
+  },
+  "homepage": "https://github.com/chee-finance/chee-server#readme"
+}
