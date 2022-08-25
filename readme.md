@@ -2,7 +2,7 @@
 
 #### 项目地址
 
-https://github.com/chee-finance/chee-server.git
+https://git@github.com:xiaodong94/koa-server.git
 
 #### 项目结构
 
@@ -15,7 +15,7 @@ https://github.com/chee-finance/chee-server.git
 
 #### 开发环境
 
-- 克隆项目 - `$ git clone https://github.com/chee-finance/chee-server.git`
+- 克隆项目 - `$ git clone https://git@github.com:xiaodong94/koa-server.git`
 - 安装依赖 - `$ cd chee-server && npm i`
 - 启动项目 - `$ num run watch && npm run start`
 
